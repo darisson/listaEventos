@@ -33,6 +33,10 @@ class EventViewModel(
         repository.insert(event)
     }
 
+    fun insert(event: Event) = viewModelScope.launch {
+        repository.insert(event)
+    }
+
     fun update(event: Event) = viewModelScope.launch {
         repository.update(event)
     }

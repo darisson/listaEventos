@@ -13,6 +13,10 @@ class EventRepository (
         eventDao.insert(event)
     }
 
+    suspend fun insert(event: Event) {
+        eventDao.insert(event)
+    }
+
     suspend fun update(event: Event) {
         eventDao.insert(event)
     }
